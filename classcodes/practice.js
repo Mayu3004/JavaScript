@@ -305,34 +305,105 @@
 
 
 
-var uniqueInOrder=function(iterable){
-  //your code here - remember iterable can be a string or an array
-  let strValue = iterable;
-  let newArr =[];
-  if(typeof strValue === 'string'){
+// var uniqueInOrder=function(iterable){
+//   //your code here - remember iterable can be a string or an array
+//   let strValue = iterable;
+//   let newArr =[];
+//   if(typeof strValue === 'string'){
      
-    strValue.split('')
+//     strValue.split('')
 
-  }
-  if(strValue.length === 0){
-    return [];
-  }
-  else if(strValue.length === 1){
-    return [strValue[0]]
-  }
-  else{
-    for(let index = 0;index<strValue.length;index++){
-      while(strValue[index]===strValue[index+1]){
-        index++;
-      }
-      newArr.push(strValue[index]);
+//   }
+//   if(strValue.length === 0){
+//     return [];
+//   }
+//   else if(strValue.length === 1){
+//     return [strValue[0]]
+//   }
+//   else{
+//     for(let index = 0;index<strValue.length;index++){
+//       while(strValue[index]===strValue[index+1]){
+//         index++;
+//       }
+//       newArr.push(strValue[index]);
+//     }
+//   }
+//   console.log(newArr)
+//   //console.log(strValue);
+// }
+
+// uniqueInOrder('AAAABBBCCDAABBB')
+
+
+// function multiply(number){
+//   //your code here
+//   const temp = number;
+
+//   let arr = String(temp).split('').map(Number);
+//   let count = arr.length
+//   console.log(count)
+//   return number>0?number * (5**count):number * (5**(count-1));
+
+  
+// }
+//  const ans = multiply(-2)
+
+//  console.log(ans)
+
+
+// function numberPlay(num,p){
+
+//   let temp = num
+//   let arr = String(num).split('').map(Number);
+//   console.log(arr)
+//   for(let i = 0;i<arr.length;i++){
+//     arr[i] = arr[i]**p;
+//     p++;
+//   }
+//   console.log(arr)
+//   const ans = arr.reduce((a,b)=>a+b)
+//   console.log(ans)
+//   const rem = ans % temp;
+//   const quoitent = ans /temp;
+//   return rem === 0 ? quoitent:-1;
+// }
+
+// const ans = numberPlay(46288,3);
+// console.log(ans)
+
+function sumDigPow(a, b) {
+  // Your code here
+  
+  let arr = [];
+  for(let i = a;i<=b;i++){
+    if(i<10){
+      arr.push(i);
+    }else{
+      if(newNumber(i)){
+        arr.push(i)
+      };
     }
   }
-  console.log(newArr)
-  //console.log(strValue);
+  //console.log(arr)
+  return arr
 }
+function newNumber(num){
+  let temp = num;
+  let arr = String(num).split('').map(Number);
+  let p = 1;
+  for(let i = 0;i<arr.length;i++){
+    arr[i] = arr[i]**p;
+    p++;
+  }
+  let ans = arr.reduce((a,b)=>a+b)
+ 
+  //console.log(ans)
+  return ans===temp;
+}
+const ans = sumDigPow(50,150);
+console.log(ans)
 
-uniqueInOrder('AAAABBBCCDAABBB')
+
 
 
 

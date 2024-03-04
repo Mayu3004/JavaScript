@@ -1,0 +1,11 @@
+
+.border{
+    padding: 50%;
+    width: 0px;
+    background-color: tan;
+    border-radius: 50%;
+}
+/* .border-inline{
+    background-color: red;
+    border: 10px solid blue;
+} */
