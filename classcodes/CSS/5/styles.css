@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+.section{
+    padding: 16px;
+    margin: 16px 8px;
+    border: thin solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px 2px #ccc;
+    position: relative;
+}
+
+.section p{
+    margin: 0;
+}
+
+.important::before{
+    content: "";
+    padding: 4px;
+    border-radius: 4px;
+    background-color: red;
+    position: absolute;
+    top: 16px;
+    left: calc(100% - 24px);
+
+}
+button{
+    background-color: blue;
+    margin-left: 50vw;
+    height: 30px;
+    color: chartreuse;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: rgb(98, 98, 241);
+    color: coral;
+    transition: background-color 0.3s,color 0.3s;
+}
+button:active{
+    background-color: darkblue;
+    
+}

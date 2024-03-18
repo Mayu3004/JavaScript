@@ -1,11 +1,43 @@
-
-.border{
-    padding: 50%;
-    width: 0px;
-    background-color: tan;
-    border-radius: 50%;
+body{
+    /* margin: 0px; */
 }
-/* .border-inline{
+.container{
+    background-color: black;
+    padding: 8px;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    position: relative;
+}
+.child{
+    padding: 16px;
+    /* margin: 8px; */
+    border: 2px solid black;
+    height: 2px;
+    width: 2px;
+}
+
+.child:nth-child(1){
+    background-color: blue;
+    position: absolute;
+    top: -35px;
+    left: 0px;
+}
+.child:nth-child(2){
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 115px;
+}
+.child:nth-child(3){
     background-color: red;
-    border: 10px solid blue;
-} */
+    position: absolute;
+    left: 79px;
+    top: 115px;
+}
+.child:nth-child(4){
+    background-color: yellow;
+    position: absolute;
+    top: 80px;
+    left: -35px;
+}
