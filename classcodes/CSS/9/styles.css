@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    box-sizing: content-box;
+}
+.main{
+    padding: 1rem;
+    box-shadow: 0px 0px 4px 1px #ededed;
+    margin: 1rem;
+    height: 100vh;
+    position: relative;
+}
+.left{
+    
+    width: 50vw;
+    margin: 1rem;
+    
+}
+.section-1{
+    padding: 5rem;
+    margin: 1rem;
+    background-color: #000;
+    height: 5rem;
+}
+.section-2{
+    padding: 5rem;
+    margin: 1rem;
+    background-color: #00f;
+    height: 10rem;
+}
+.right{
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    top: 0;
+    width: 44vw;
+}
+.section-3{
+    /* display: inline-block; */
+    padding: 5rem;
+    margin: 1rem;
+    background-color: red;
+    height: 26rem;
+    /* position: absolute;
+    right: 0; */
+
+}
